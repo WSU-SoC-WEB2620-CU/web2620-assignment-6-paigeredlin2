@@ -1,0 +1,203 @@
+$column-width: 8.333333333%;
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: var(--max-width);
+    padding-left: calc(var(--gutter) / 2);
+    padding-right: calc(var(--gutter) / 2);
+    &-fluid{
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        padding-left: calc(var(--gutter) / 2);
+        padding-right: calc(var(--gutter) / 2);
+    }
+  }
+  
+  .row {
+    margin-left: calc(-1 * (var(--gutter) / 2));
+    margin-right: calc(-1 * (var(--gutter) / 2));
+    &::before, &::after {
+        content: ' ';
+        display: table;
+        }
+    &::after {
+        clear: both;
+        }
+  }
+    
+  [class*='column'] {
+    float: left;
+    width: $column-width;
+    min-height: 1px;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+  
+$columnClasses: "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve";
+$columnClassesFractions: ("one-quarter": 3, "one-third": 4, "one-half": 6, "two-thirds": 8);
+
+@mixin calculateColumnWidth($value){
+    width: calc(($column-width) * $value);
+  }
+
+
+  
+
+@mixin offsetMargin($value){
+  margin-left: calc(($column-width) * $value);
+}
+
+.xs{
+    @each $column in $columnClasses{
+        $ind: index($columnClasses, $column);
+        &-#{$column}[class*='column']{
+            @include calculateColumnWidth($ind);
+        }
+      }
+  }
+
+  .xs{
+    @each $column, $value in $columnClassesFractions{
+      &-#{$column}[class*='column']{
+        @include calculateColumnWidth($value);
+      }
+    }
+  }
+
+  [class*='xs-'][class*='column'] ~ [class*='xs-'][class*='column'] {
+    margin-top: 0;
+  }
+  
+  /*Screen change small*/
+  @media screen and (min-width: 560px) {
+    [class*='column'] ~ [class*='column'] {
+      margin-top: 0;
+    }
+
+      @each $column in $columnClasses{
+        $ind: index($columnClasses, $column);
+          .#{$column}[class*='column']{
+              @include calculateColumnWidth($ind);
+          }
+        }
+  
+      @each $column, $value in $columnClassesFractions{
+        .#{$column}[class*='column']{
+          @include calculateColumnWidth($value);
+        }
+      }
+
+
+    @each $column in $columnClasses{
+      $ind: index($columnClasses, $column);
+      .offset-by-#{$column}[class*='column']{
+        @include offsetMargin($ind);
+      }
+    }
+    @each $column, $value in $columnClassesFractions{
+      .offset-by-#{$column}[class*='column']{
+        @include offsetMargin($value);
+      }
+    }
+    
+    @each $column in $columnClasses{
+      $ind: index($columnClasses, $column);
+      .sm-#{$column}[class*='column']{
+        @include calculateColumnWidth($ind);
+      }
+    }
+
+    @each $column, $value in $columnClassesFractions{
+      .sm-#{$column}[class*='column']{
+        @include calculateColumnWidth($value);
+      }
+    }
+    
+    @each $column in $columnClasses{
+      $ind: index($columnClasses, $column);
+      .sm-offset-by-#{$column}[class*='column']{
+        @include offsetMargin($ind);
+      }
+    }
+    @each $column, $value in $columnClassesFractions{
+      .sm-offset-by-#{$column}[class*='column']{
+        @include offsetMargin($value);
+      }
+    }
+
+    .sm-offset-by-zero[class*='column'] {
+      margin-left: 0;
+    }
+  
+  }
+  
+  @media screen and (min-width: 720px) {
+    //looping for column widths
+    @each $column in $columnClasses{
+      $ind: index($columnClasses, $column);
+        .md-#{$column}[class*='column']{
+            @include calculateColumnWidth($ind);
+        }
+      }
+
+    @each $column, $value in $columnClassesFractions{
+      .md-#{$column}[class*='column']{
+        @include calculateColumnWidth($value);
+      }
+    }
+
+    //looping for column offsets
+    @each $column in $columnClasses{
+      $ind2: index($columnClasses, $column);
+      .md-offset-by-#{$column}[class*='column']{
+        @include offsetMargin($ind2);
+      }
+    }
+
+    @each $column, $value in $columnClassesFractions{
+      .md-offset-by-#{$column}[class*='column']{
+        @include offsetMargin($value);
+      }
+    }
+  
+    .md-offset-by-zero[class*='column'] {
+      margin-left: 0;
+    }
+    
+  }
+  
+  @media screen and (min-width: 960px) {
+
+    //looping for column widths
+    @each $column in $columnClasses{
+      $ind: index($columnClasses, $column);
+        .lg-#{$column}[class*='column']{
+            @include calculateColumnWidth($ind);
+        }
+      }
+
+    @each $column, $value in $columnClassesFractions{
+      .lg-#{$column}[class*='column']{
+        @include calculateColumnWidth($value);
+      }
+    }
+
+    //looping for column offsets
+    @each $column in $columnClasses{
+      $ind: index($columnClasses, $column);
+      .lg-offset-by-#{$column}[class*='column']{
+        @include offsetMargin($ind);
+      }
+    }
+    @each $column, $value in $columnClassesFractions{
+      .lg-offset-by-#{$column}[class*='column']{
+        @include offsetMargin($value);
+      }
+    }
+   .lg-offset-by-zero[class*='column'] {
+      margin-left: 0;
+   }  
+  }
+  

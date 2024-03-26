@@ -1,0 +1,62 @@
+$primaryBlue: lightBlue;
+$successGreen: lightGreen;
+$dangerRed: rgb(224, 81, 81);
+$black: #222;
+$white: white;
+$primaryColor: darkGray;  
+
+$buttonTypes: ("basic": $white, "primary": $primaryBlue, "success": $successGreen, "danger": $dangerRed);
+
+
+@mixin createButton($color){
+  display: inline-block;
+  height: 2.5rem;
+  padding: 0 1.9rem;
+  @if $color != white{
+    color: white;
+  }
+  @else{
+    color: $black;
+  }
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: $color;
+  border-radius: 5px;
+  margin: .3em;
+  @if $color != white{
+    border: 1px solid $color;
+  }
+  @else{
+    border: 1px solid $black;
+  }
+  cursor: pointer;
+  -webkit-transition: border 0.2s;
+  -moz-transition: border 0.2s;
+  -ms-transition: border 0.2s;
+  -o-transition: border 0.2s;
+  transition: border 0.2s;
+  &:hover{
+    color: $primaryColor;
+  }
+  &:disabled{
+    cursor: not-allowed;
+    background-color: lighten($color, 5%)
+  }
+  &:active{
+    border: 2px solid $black;
+  }
+}
+
+  @each $buttonName, $buttonColor in $buttonTypes{
+    .button-#{$buttonName}{
+      @include createButton($buttonColor);
+    }
+  }
+
+

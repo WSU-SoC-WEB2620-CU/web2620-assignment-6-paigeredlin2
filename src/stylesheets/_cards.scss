@@ -1,0 +1,32 @@
+/* Cards */
+
+@mixin createCard($color){
+    border: 1px solid $color;
+    padding: 10px 25px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px darken($color, 5%);
+    min-height: 160px;
+    margin-bottom: 1.2rem;
+  }
+  
+  .card{
+    @include createCard($primaryColor);
+  }
+  
+
+
+  
+  a.card {
+    display: block;
+    color: var(--card-anchor-color);
+    text-decoration: none;
+    transition: color .3s, transform .3s, border-color .3s;
+    &:hover,&:active {
+      color: black;
+      border-color: var(--card-active-border);
+      transform: translateX(var(--card-shift)) translateY(var(--card-shift));
+    }
+  }
+  
+  
+  

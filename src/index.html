@@ -5,244 +5,754 @@
   <meta charset="utf-8">
   <title>Project Starter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylehseet" href="./stylesheets/main.scss">
+
+  <!-- Don't change the paths of the following two lines-->
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+  <script type="module" src="./javascripts/main.js" defer></script>
+
+  <style>
+    .demo-col {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      background-color: #0074D9;
+      color: #fff;
+      text-align: center;
+    }
+
+    .demo-row {
+      margin-bottom: 1rem;
+    }
+
+    .nested {
+      background-color: #001f3f;
+    }
+  </style>
 </head>
 
-<body class="homepage">
-
-  <div class="header">
-    <div class="container">
-
-      <div class="logo">
-        <h1><a href="#">Ex Machina</a></h1>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li class="active"><a href="index.html">Homepage</a></li>
-          <li><a href="left-sidebar.html">Left Sidebar</a></li>
-          <li><a href="right-sidebar.html">Right Sidebar</a></li>
-          <li><a href="no-sidebar.html">No Sidebar</a></li>
-        </ul>
-      </nav>
-
-    </div>
-  </div>
-
-  <div class="banner">
-    <div class="container">
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="marketing container">
-      <div class="row">
-        <div class="column-3">
-          <section>
-            <header>
-              <h2>Feugiat Tempus</h2>
-            </header>
-            <p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-            <p><a href="#"><img src="images/pics13.jpg" alt=""></a></p>
-            <a href="#" class="button">More</a>
-          </section>
-        </div>
-        <div class="column-3">
-          <section>
-            <header>
-              <h2>Maecenas lectus</h2>
-            </header>
-            <p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-            <p><a href="#"><img src="images/pics14.jpg" alt=""></a></p>
-            <a href="#" class="button">More</a>
-          </section>
-        </div>
-        <div class="column-3">
-          <section>
-            <header>
-              <h2>Luctus lectus</h2>
-            </header>
-            <p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-            <p><a href="#"><img src="images/pics15.jpg" alt=""></a></p>
-            <a href="#" class="button">More</a>
-          </section>
-        </div>
-        <div class="column-3">
-          <section>
-            <header>
-              <h2>Posuere eleifend</h2>
-            </header>
-            <p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-            <p><a href="#"><img src="images/pics16.jpg" alt=""></a></p>
-            <a href="#" class="button">More</a>
-          </section>
-        </div>
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Skeleton Framework</h1>
+        <hr>
       </div>
     </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="column-6">
-          <section>
-            <header>
-              <h2>Integer gravida nibh quis urna</h2>
-              <span class="byline">Augue praesent a lacus at urna congue rutrum</span>
-            </header>
-            <p>This is <strong>Ex Machina</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
-            <p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.</p>
-            <p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.</p>
-            <a href="#" class="button">More Details</a>
-          </section>
-        </div>
-        <div class="column-3">
-          <section class="sidebar">
-            <header>
-              <h2>Feugiat Tempus</h2>
-            </header>
-            <ul class="style2">
-              <li>
-                <a href="#"><img src="images/pics07.jpg" alt=""></a>
-                <p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
-              </li>
-              <li>
-                <a href="#"><img src="images/pics08.jpg" alt=""></a>
-                <p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
-              </li>
-              <li>
-                <a href="#"><img src="images/pics09.jpg" alt=""></a>
-                <p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
-              </li>
-              <li>
-                <a href="#"><img src="images/pics10.jpg" alt=""></a>
-                <p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
-              </li>
-            </ul>
-          </section>
-        </div>
-        <div class="column-3">
-          <section class="sidebar">
-            <header>
-              <h2>Feugiat Tempus</h2>
-            </header>
-            <ul class="style1">
-              <li><a href="#">Maecenas luctus lectus at sapien</a></li>
-              <li><a href="#">Etiam rhoncus volutpat erat</a></li>
-              <li><a href="#">Donec dictum metus in sapien</a></li>
-              <li><a href="#">Nulla luctus eleifend purus</a></li>
-              <li><a href="#">Maecenas luctus lectus at sapien</a></li>
-            </ul>
-          </section>
-          <section class="sidebar">
-            <header>
-              <h2>Nulla luctus eleifend</h2>
-            </header>
-            <ul class="style1">
-              <li><a href="#">Maecenas luctus lectus at sapien</a></li>
-              <li><a href="#">Donec dictum metus in sapien</a></li>
-              <li><a href="#">Integer gravida nibh quis urna</a></li>
-              <li><a href="#">Etiam posuere augue sit amet nisl</a></li>
-              <li><a href="#">Mauris vulputate dolor sit amet nibh</a></li>
-            </ul>
-          </section>
-        </div>
+    <div class="row">
+      <div class="twelve columns">
+        <h2>1. Grid</h2>
       </div>
     </div>
   </div>
 
-  <div class="featured">
-    <div class="container">
-      <div class="row">
-        <section class="column-4">
-          <div class="box">
-            <a href="#" class="image left"><img src="images/pics04.jpg" alt=""></a>
-            <h3>Etiam posuere augue</h3>
-            <p>Donec nonummy magna quis risus eleifend. </p>
-            <a href="#" class="button">More</a>
-          </div>
-        </section>
-        <section class="column-4">
-          <div class="box">
-            <a href="#" class="image left"><img src="images/pics05.jpg" alt=""></a>
-            <h3>Etiam posuere augue</h3>
-            <p>Donec nonummy magna quis risus eleifend. </p>
-            <a href="#" class="button">More</a>
-          </div>
-        </section>
-        <section class="column-4">
-          <div class="box">
-            <a href="#" class="image left"><img src="images/pics06.jpg" alt=""></a>
-            <h3>Etiam posuere augue</h3>
-            <p>Donec nonummy magna quis risus eleifend. </p>
-            <a href="#" class="button">More</a>
-          </div>
-        </section>
+  <div class="container">
+    <div class="row demo-row">
+      <div class="twelve columns">
+        <div class="demo-col">twelve columns</div>
       </div>
-      <div class="divider"></div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="one column">
+        <div class="demo-col">one</div>
+      </div>
+      <div class="eleven columns">
+        <div class="demo-col">eleven columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="two columns">
+        <div class="demo-col">two columns</div>
+      </div>
+      <div class="ten columns">
+        <div class="demo-col">ten columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="three columns">
+        <div class="demo-col">three columns</div>
+      </div>
+      <div class="nine columns">
+        <div class="demo-col">nine columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="four columns">
+        <div class="demo-col">four columns</div>
+      </div>
+      <div class="eight columns">
+        <div class="demo-col">eight columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="five columns">
+        <div class="demo-col">five columns</div>
+      </div>
+      <div class="seven columns">
+        <div class="demo-col">seven columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="six columns">
+        <div class="demo-col">six columns</div>
+      </div>
+      <div class="six columns">
+        <div class="demo-col">six columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="four columns">
+        <div class="demo-col">four columns</div>
+      </div>
+      <div class="four columns">
+        <div class="demo-col">four columns</div>
+      </div>
+      <div class="four columns">
+        <div class="demo-col">four columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="three columns">
+        <div class="demo-col">three columns</div>
+      </div>
+      <div class="three columns">
+        <div class="demo-col">three columns</div>
+      </div>
+      <div class="three columns">
+        <div class="demo-col">three columns</div>
+      </div>
+      <div class="three columns">
+        <div class="demo-col">three columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="two columns">
+        <div class="demo-col">two columns</div>
+      </div>
+      <div class="eight columns">
+        <div class="demo-col">eight columns</div>
+      </div>
+      <div class="two columns">
+        <div class="demo-col">two columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="seven columns">
+        <div class="demo-col">seven columns</div>
+      </div>
+      <div class="five columns">
+        <div class="demo-col">five columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="one-third column">
+        <div class="demo-col">one-third column</div>
+      </div>
+      <div class="two-thirds column">
+        <div class="demo-col">two-thirds column</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="one-half column">
+        <div class="demo-col">one-half column</div>
+      </div>
+      <div class="one-half column">
+        <div class="demo-col">one-half column</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="one-quarter column">
+        <div class="demo-col">one-quarter column</div>
+      </div>
+      <div class="one-quarter columns">
+        <div class="demo-col">one-quarter column</div>
+      </div>
+      <div class="one-quarter column">
+        <div class="demo-col">one-quarter column</div>
+      </div>
+      <div class="one-quarter column">
+        <div class="demo-col">one-quarter column</div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="tweleve columns">
+        <h3>grid offsets</h3>
+      </div>
     </div>
   </div>
 
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="column-3">
-          <section>
-            <h2>Maecenas lectus</h2>
-            <div class="balloon">
-              <blockquote>&ldquo;&nbsp;&nbsp;Donec leo, vivamus ullamcorper fermentum nibh in augue pulvinar ullamcorper metus praesent a lacus at urna congue ullamcorper rutrum.&nbsp;&nbsp;&rdquo;<br>
-                <br>
-                <strong>&ndash;&nbsp;&nbsp;John Smith</strong></blockquote>
+  <div class="container">
+    <div class="row demo-row">
+      <div class="eleven columns offset-by-one">
+        <div class="demo-col">eleven columns offset by one</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="ten columns offset-by-two">
+        <div class="demo-col">ten columns offset by two</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="nine columns offset-by-three">
+        <div class="demo-col">nine columns offset by three</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="eight columns offset-by-four">
+        <div class="demo-col">eight columns offset by four</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="seven columns offset-by-five">
+        <div class="demo-col">seven columns offset by five</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="six columns offset-by-six">
+        <div class="demo-col">six columns offset by six</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="five columns offset-by-seven">
+        <div class="demo-col">five columns offset by seven</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="four columns">
+        <div class="demo-col">four columns</div>
+      </div>
+      <div class="four columns offset-by-four">
+        <div class="demo-col">four columns offset by four</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="three columns offset-by-nine">
+        <div class="demo-col">three columns offset by nine</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="six columns offset-by-three">
+        <div class="demo-col">six columns offset by three</div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="tweleve columns">
+        <h3>nested grids</h3>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="six columns">
+        <div class="demo-col">six columns</div>
+      </div>
+      <div class="six columns">
+        <div class="demo-col">
+          six columns with nested grid
+          <div class="container container__nested">
+            <div class="row demo-row" style="margin-top: 15px;">
+              <div class="six columns">
+                <div class="demo-col nested">
+                  six columns nested
+                </div>
+              </div>
+              <div class="six columns">
+                <div class="demo-col nested">
+                  six columns nested
+                </div>
+              </div>
             </div>
-            <div class="ballon-bgbtm">&nbsp;</div>
-          </section>
-        </div>
-        <div class="column-3">
-          <section>
-            <h2>Donec dictum</h2>
-            <ul class="default">
-              <li>
-                <h3>Mauris vulputate dolor sit amet</h3>
-                <p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
-              </li>
-              <li>
-                <h3>Fusce ultrices fringilla metus</h3>
-                <p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
-              </li>
-              <li>
-                <h3>Donec dictum metus in sapien</h3>
-                <p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
-              </li>
-            </ul>
-          </section>
-        </div>
-        <div class="column-3">
-          <section>
-            <h2>Nulla leifend</h2>
-            <p>Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat.</p>
-            <ul class="style5">
-              <li><a href="#"><img src="images/pics07.jpg" alt=""></a></li>
-              <li><a href="#"><img src="images/pics08.jpg" alt=""></a></li>
-              <li><a href="#"><img src="images/pics09.jpg" alt=""></a></li>
-              <li><a href="#"><img src="images/pics10.jpg" alt=""></a></li>
-              <li><a href="#"><img src="images/pics11.jpg" alt=""></a></li>
-              <li><a href="#"><img src="images/pics12.jpg" alt=""></a></li>
-            </ul>
-            <a href="#" class="button">More Collections</a>
-          </section>
-        </div>
-        <div class="column-3">
-          <section>
-            <h2>Luctus eleifend</h2>
-            <p><strong>Aliquam erat volutpat. Pellentesque tristique ante ut risus. </strong></p>
-            <p>Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit.</p>
-            <p>Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat.</p>
-            <a href="#" class="button">More Collections</a>
-          </section>
+            <div class="row">
+              <div class="twelve columns">
+                <div class="demo-col nested">
+                  twelve columns nested
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <br>
 
-  <div class="copyright container">
-    Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+  <div class="container">
+    <div class="row">
+      <div class="tweleve columns">
+        <h3>responsive grids</h3>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row demo-row">
+      <div class="xs-six sm-seven columns">
+        <div class="demo-col">xs-six sm-seven columns</div>
+      </div>
+      <div class="xs-six sm-five columns">
+        <div class="demo-col">xs-six sm-five columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="sm-twelve md-six lg-four columns">
+        <div class="demo-col">sm-twelve md-six lg-four columns</div>
+      </div>
+      <div class="sm-twelve md-six lg-four columns">
+        <div class="demo-col">sm-twelve md-six lg-four columns</div>
+      </div>
+      <div class="sm-twelve lg-four columns">
+        <div class="demo-col">sm-twelve lg-four columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="md-six columns">
+        <div class="demo-col">md-six columns</div>
+      </div>
+      <div class="md-six columns">
+        <div class="demo-col">md-six columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="md-eight lg-six lg-offset-by-six columns">
+        <div class="demo-col">md-eight lg-six lg-offset-by-six columns</div>
+      </div>
+    </div>
+
+    <div class="row demo-row">
+      <div class="md-eight md-offset-by-two lg-twelve lg-offset-by-zero columns">
+        <div class="demo-col">md-eight md-offset-by-two lg-twelve lg-offset-by-zero columns</div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="tweleve columns">
+        <h2>2. Typography</h2>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 3.6rem</span></h1>
+        <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 3.0rem</span></h2>
+        <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 2.4rem</span></h3>
+        <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 1.8rem</span></h4>
+        <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 1.5rem</span></h5>
+        <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 1.2rem</span></h6>
+
+        <p>
+          <strong>Bolded</strong>
+          <em>Italicized</em>
+          <a>Colored</a>
+          <u>Underlined</u>
+          <s>Stroked</s>
+          <span class="text-primary">Text Primary</span>
+          <span class="text-success">Text Success</span>
+          <span class="text-danger">Text Danger</span>
+        </p>
+
+        <p>
+          check out this paragraph "Who are you who speaks out of the darkness?" he answered "John Carter, a friend of the red men of Helium." "I am of Helium," he said, "but I do not recall your name." And then I told him my story as I have written it here, omitting only any reference to my love for Dejah Thoris. 
+        </p>
+        <p>
+          He was much excited by the news of Helium's princess and seemed quite positive that she and Sola could easily have reached a point of safety from where they left me. He said that he knew the place well because the defile through which the Warhoon warriors had passed when they discovered us was the only one ever used by them when marching to the south. "Dejah Thoris and Sola entered the hills not five miles from a great waterway and are now probably quite safe," he assured me. My fellow prisoner
+        </p>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="tweleve columns">
+        <h2>3. Buttons</h2>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <div>
+          <a class="button button-basic" href="#">Anchor button</a>
+          <button class="button-basic">Button element</button>
+          <input class="button-basic" type="submit" value="submit input">
+          <input class="button-basic" type="button" value="button input">
+          <input class="button-basic" type="button" value="active button" active>
+          <input class="button-basic" type="button" value="disabled button" disabled>
+        </div>
+
+        <div>
+          <a class="button button-primary" href="#">Anchor button</a>
+          <button class="button-primary">Button element</button>
+          <input class="button-primary" type="submit" value="submit input">
+          <input class="button-primary" type="button" value="button input">
+          <input class="button-primary" type="button" value="active button" active>
+          <input class="button-primary" type="button" value="disabled button" disabled>
+        </div>
+        <div>
+          <a class="button button-success" href="#">Anchor button</a>
+          <button class="button-success">Button element</button>
+          <input class="button-success" type="submit" value="submit input">
+          <input class="button-success" type="button" value="button input">
+          <input class="button-success" type="button" value="active button" active>
+          <input class="button-success" type="button" value="disabled button" disabled>
+        </div>
+        <div>
+          <a class="button button-danger" href="#">Anchor button</a>
+          <button class="button-danger">Button element</button>
+          <input class="button-danger" type="submit" value="submit input">
+          <input class="button-danger" type="button" value="button input">
+          <input class="button-danger" type="button" value="active button" active>
+          <input class="button-danger" type="button" value="disabled button" disabled>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="tweleve columns">
+        <h2>4. Forms</h2>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleEmailInput">Your email</label>
+          <input class="u-full-width basic-input" type="email" placeholder="test@mailbox.com">
+        </div>
+        <div class="six columns">
+          <label for="exampleRecipientInput">Reason for contacting</label>
+          <select class="u-full-width basic-input">
+              <option value="Option 1">Questions</option>
+              <option value="Option 2">Admiration</option>
+              <option value="Option 3">Can I get your number?</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <label for="exampleEmailInput">Your email</label>
+          <input class="u-full-width has-error" type="email" placeholder="test@mailbox.com" value="john@doe">
+        </div>
+        <div class="six columns">
+          <label for="exampleRecipientInput">Reason for contacting</label>
+          <select class="u-full-width has-success">
+              <option value="Option 1">Questions</option>
+              <option value="Option 2">Admiration</option>
+              <option value="Option 3">Can I get your number?</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hey guys &hellip;"></textarea>
+          <label>
+              <input type="checkbox">
+              <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="button-primary" type="submit" value="Submit">
+        </div>
+      </div>
+    </form>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="tweleve columns">
+        <h2>5. Lists</h2>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="six columns">
+        <ul>
+          <li>Unordered lists have basic styles</li>
+          <li>
+            They use the circle list style
+            <ul>
+              <li>Nested lists styled to feel right</li>
+              <li>Can nest either type of list into the other</li>
+            </ul>
+          </li>
+          <li>Just more list items mama san</li>
+        </ul>
+      </div>
+      <div class="six columns">
+        <ol>
+          <li>Ordered lists also have basic styles</li>
+          <li>
+            They use the decimal list style
+            <ul>
+              <li>Ordered and unordered can be nested</li>
+              <li>Can nest either type of list into the other</li>
+            </ul>
+          </li>
+          <li>Last list item just for the fun</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <ul class="list-inline">
+          <li>Inline lists have basic styles as well</li>
+          <li>All of their items</li>
+          <li>Just appear on the same line</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h2>6. Code</h2>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <pre>
+          <code>
+            .some-class {
+                background-color: red;
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h2>7. Alerts</h2>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <div class="alert">
+          This is an alert!
+        </div>
+        <div class="alert alert-primary">
+          This is a primary alert!
+        </div>
+        <div class="alert alert-success">
+          This is a success alert!
+        </div>
+        <div class="alert alert-danger">
+          This is a danger alert!
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h2>8. Tables</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4> regular tables </h4>
+        <p>
+          Sharp looking, minimalist tables. Content in the cells wraps on small screen sizes.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Sex</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave Gamache</td>
+              <td>26</td>
+              <td>Male</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr>
+              <td>Dwayne Johnson</td>
+              <td>42</td>
+              <td>Male</td>
+              <td>Hayward</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4> responsive tables </h4>
+        <p>
+          Wrap your <code>table</code> element in <code>&lt;div class="table-responsive" /&gt;</code> to make it scroll horizontally at smaller viewport sizes.
+        </p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dave Gamache</td>
+                <td>26</td>
+                <td>Male</td>
+                <td>San Francisco</td>
+              </tr>
+              <tr>
+                <td>Dwayne Johnson</td>
+                <td>42</td>
+                <td>Male</td>
+                <td>Hayward</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h2>9. Cards</h2>
+        <p>
+          Pretty sweet, very mobile. Group your callout content, or keep things organized without a creating a visual heirarchy.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="six columns">
+        <div class="card">
+          <h5>Text</h5>
+          <p>Text</p>
+          <div class="u-text-right">
+            <button class="button-primary">Nice Button</button>
+          </div>
+        </div>
+      </div>
+      <div class="six columns">
+        <div class="card">
+          <h5>Text</h5>
+          <p>Text</p>
+          <div class="u-text-right">
+            <button class="button-primary">Nice Button</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="three columns">
+        <a href="#" class="card">
+          <h6>Link Card</h6>
+          <p>Text</p>
+        </a>
+      </div>
+      <div class="six columns">
+        <a href="#" class="card">
+          <h6>Link Card</h6>
+          <p>Text</p>
+        </a>
+      </div>
+      <div class="three columns">
+        <a href="#" class="card">
+          <h6>Link Card</h6>
+          <p>Text</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="seven columns">
+        <div class="card">
+          <h6> Big Card </h6>
+          <p>
+            I have never told this story, nor shall mortal man see this manuscript until after I have passed over for eternity. I know that the average human mind will not believe what it cannot grasp, and so I do not purpose being pilloried by the public, the pulpit, and the press, and held up as a colossal liar when I am but telling the simple truths
+          </p>
+        </div>
+      </div>
+
+      <div class="five columns">
+        <div class="card">
+          <h6> Small Card </h6>
+          <p>
+            I have never told this story, nor shall mortal man see this manuscript until
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>

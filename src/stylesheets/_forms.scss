@@ -1,0 +1,60 @@
+$primaryBlue: lightBlue;
+$successGreen: lightGreen;
+$dangerRed: rgb(224, 81, 81);
+$black: #222;
+$white: white;
+$primaryColor: darkGray;  
+
+@mixin createFormSpace($color){
+  @if $color == white{
+    border: 1px solid black;
+  }
+  @else{
+    border: 1px solid $color;
+  }
+  width: 100%;
+  height: 2.5em;
+  padding: 0.4rem 0.6rem;
+  background-color: $white;
+  &:focus{
+    border: 2px solid $black;
+  }
+}
+
+.has-success{
+  @include createFormSpace($successGreen);
+}
+.has-error{
+  @include createFormSpace($dangerRed);
+}
+.basic-input{
+  @include createFormSpace($black);
+}
+
+textarea {
+  @include createFormSpace($black);
+}
+
+
+label,
+legend {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-weight: normal;
+}
