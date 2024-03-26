@@ -58,5 +58,3 @@ $buttonTypes: ("basic": $white, "primary": $primaryBlue, "success": $successGree
       @include createButton($buttonColor);
     }
   }
-
-
